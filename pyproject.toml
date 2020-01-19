@@ -17,3 +17,8 @@ build-backend = "poetry.masonry.api"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+
+[too.poetry.source]
+name = "TestPyPi"
+url = "https://test.pypi.org/legacy/"
+default = true
