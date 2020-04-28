@@ -10,7 +10,7 @@ before-install:
   - pip install poetry
 
 install:
-  - make install
+  - make configure
 
 script:
-  - make check
+  - make lint
