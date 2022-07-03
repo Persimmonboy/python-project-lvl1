@@ -15,14 +15,14 @@ def run_engine(game_name):
     name = get_user_name()
     print(game_name.TASK)
     while i < 3:
-        answer, question = game_name.game_script()
-        print("Question: {}".format(question))
+        answer, value = game_name.game_script()
+        print("Question: {}".format(value))
         user_answer = prompt.string('Your answer: ')
         if answer == user_answer:
             print ("Correct!")
             i += 1
         else:
-            print("{user_answer} is wrong answer ;(. Correct answer was {answer}. \nLet's try again, {}!".format(name))
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'. \nLet's try again, {name}!")
     print("Congratulations, {}!".format(name))
 
 
