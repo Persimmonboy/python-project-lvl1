@@ -22,7 +22,7 @@ def run_engine(game_name):
             print ("Correct!")
             i += 1
         else:
-            print("'yes' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, {}!".format(name))
+            print("{user_answer} is wrong answer ;(. Correct answer was {answer}. \nLet's try again, {}!".format(name))
     print("Congratulations, {}!".format(name))
 
 
