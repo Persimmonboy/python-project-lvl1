@@ -1,13 +1,15 @@
 import prompt
-import random
+
 
 def welcome():
     print("Welcome to the Brain Games!")
+
 
 def get_user_name():
     name = prompt.string('May I have your name? ')
     print("Hello, {}!".format(name))
     return name
+
 
 def run_engine(game_name):
     i = 0
@@ -19,13 +21,10 @@ def run_engine(game_name):
         print("Question: {}".format(value))
         user_answer = prompt.string('Your answer: ')
         if answer == user_answer:
-            print ("Correct!")
+            print("Correct!")
             i += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'. \nLet's try again, {name}!")
+            print(f"'{user_answer}' is wrong answer ;(."
+                  f"Correct answer was '{answer}'.\n"
+                  f"Let's try again, {name}!")
     print("Congratulations, {}!".format(name))
-
-
-
-
-
