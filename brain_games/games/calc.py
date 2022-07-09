@@ -4,8 +4,7 @@ import operator
 
 ops = {'+': operator.add,
        '-': operator.sub,
-       '*': operator.mul,
-       '//': operator.floordiv}
+       '*': operator.mul}
 
 
 TASK = 'What is the result of the expression?'
