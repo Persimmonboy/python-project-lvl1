@@ -27,4 +27,5 @@ def run_engine(game_name):
             print(f"'{user_answer}' is wrong answer ;(."
                   f"Correct answer was '{answer}'.\n"
                   f"Let's try again, {name}!")
+            return
     print("Congratulations, {}!".format(name))
