@@ -5,7 +5,7 @@ import operator
 ops = {'+': operator.add,
        '-': operator.sub,
        '*': operator.mul,
-       '/': operator.truediv}
+       '//': operator.floordiv}
 
 
 TASK = 'What is the result of the expression?'
